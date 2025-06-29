@@ -31,7 +31,7 @@ const LandingPage: React.FC = () => {
               >
                 <Users className="h-5 w-5" />
                 <span>Browse Filipino Talent</span>
-                Find Filipino AI Experts
+                
               </Link>
               <Link 
                 to="/signup"
