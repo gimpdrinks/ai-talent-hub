@@ -27,17 +27,17 @@ const LandingPage: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
               <Link 
                 to="/directory"
-                className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors duration-300"
+                className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors duration-300 flex items-center space-x-2"
               >
                 <Users className="h-5 w-5" />
                 <span>Browse Filipino Talent</span>
-                
+                <ArrowRight className="h-5 w-5" />
               </Link>
               <Link 
                 to="/signup"
                 className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-900 transition-all duration-300 flex items-center space-x-2"
               >
-                Join as Filipino Expert
+                <Shield className="h-5 w-5" />
                 <span>Join as Filipino Expert</span>
               </Link>
             </div>
