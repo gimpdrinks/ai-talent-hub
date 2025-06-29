@@ -5,10 +5,21 @@ import { Brain, Menu, X, User, LogOut } from 'lucide-react';
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [scrolled, setScrolled] = React.useState(false);
   const { user, signOut } = useAuth();
   const location = useLocation();
 
   const isLandingPage = location.pathname === '/';
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const handleSignOut = async () => {
     await signOut();
@@ -19,14 +30,14 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     <div className="min-h-screen bg-gray-50">
       {/* Navigation */}
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isLandingPage ? 'bg-transparent' : 'bg-white shadow-sm'
+        scrolled || !isLandingPage ? 'bg-white shadow-sm' : 'bg-transparent'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
-              <Brain className={`h-8 w-8 ${isLandingPage ? 'text-white' : 'text-blue-600'}`} />
-              <span className={`text-xl font-bold ${isLandingPage ? 'text-white' : 'text-gray-900'}`}>
+              <Brain className={`h-8 w-8 ${scrolled || !isLandingPage ? 'text-blue-600' : 'text-white'}`} />
+              <span className={`text-xl font-bold ${scrolled || !isLandingPage ? 'text-gray-900' : 'text-white'}`}>
                 AI TalentHub
               </span>
             </Link>
@@ -36,7 +47,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
               <Link 
                 to="/directory" 
                 className={`transition-colors ${
-                  isLandingPage ? 'text-white hover:text-blue-200' : 'text-gray-700 hover:text-blue-600'
+                  scrolled || !isLandingPage ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'
                 }`}
               >
                 Browse Filipino Talent
@@ -47,7 +58,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                   <Link 
                     to="/dashboard" 
                     className={`transition-colors ${
-                      isLandingPage ? 'text-white hover:text-blue-200' : 'text-gray-700 hover:text-blue-600'
+                      scrolled || !isLandingPage ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'
                     }`}
                   >
                     Dashboard
@@ -55,7 +66,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                   <button 
                     onClick={handleSignOut}
                     className={`flex items-center space-x-1 transition-colors ${
-                      isLandingPage ? 'text-white hover:text-blue-200' : 'text-gray-700 hover:text-blue-600'
+                      scrolled || !isLandingPage ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'
                     }`}
                   >
                     <LogOut className="h-4 w-4" />
@@ -67,7 +78,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                   <Link 
                     to="/login" 
                     className={`transition-colors ${
-                      isLandingPage ? 'text-white hover:text-blue-200' : 'text-gray-700 hover:text-blue-600'
+                      scrolled || !isLandingPage ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'
                     }`}
                   >
                     Sign In
@@ -85,7 +96,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             {/* Mobile menu button */}
             <button 
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={`md:hidden ${isLandingPage ? 'text-white' : 'text-gray-700'}`}
+              className={`md:hidden ${scrolled || !isLandingPage ? 'text-gray-700' : 'text-white'}`}
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
