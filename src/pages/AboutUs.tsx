@@ -53,32 +53,32 @@ const AboutUs: React.FC = () => {
   ];
 
   const stats = [
-    { value: '500+', label: 'Verified AI Experts' },
-    { value: '1,200+', label: 'Successful Projects' },
+    { value: '800+', label: 'Filipino AI Experts' },
+    { value: '2,500+', label: 'Successful Projects' },
     { value: '98%', label: 'Client Satisfaction' },
-    { value: '50+', label: 'Countries Served' }
+    { value: '45+', label: 'Countries Served' }
   ];
 
   const milestones = [
     {
       year: '2023',
       title: 'Company Founded',
-      description: 'AI TalentHub was born from the vision to connect verified AI talent with innovative companies'
+      description: 'AI TalentHub was founded to showcase Filipino AI excellence and connect it with global opportunities'
     },
     {
       year: '2024',
       title: 'AI Verification Launch',
-      description: 'Launched our proprietary AI assessment system to verify freelancer skills'
+      description: 'Launched our specialized verification system for Filipino AI professionals'
     },
     {
       year: '2024',
-      title: '500+ Verified Experts',
-      description: 'Reached milestone of 500 verified AI professionals on the platform'
+      title: '800+ Filipino Experts',
+      description: 'Reached milestone of 800 verified Filipino AI professionals on the platform'
     },
     {
       year: '2025',
       title: 'Global Expansion',
-      description: 'Expanding operations to serve clients and freelancers worldwide'
+      description: 'Expanding to serve more global clients seeking Filipino AI talent'
     }
   ];
 
@@ -89,17 +89,17 @@ const AboutUs: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Revolutionizing AI Talent
-              <span className="block text-blue-300">Verification</span>
+              Empowering Filipino AI
+              <span className="block text-blue-300">Excellence Globally</span>
             </h1>
             <p className="text-xl sm:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
-              We're building the world's first AI-verified freelancer marketplace, 
-              ensuring quality connections between talent and opportunity.
+              We're connecting world-class Filipino AI talent with global opportunities, 
+              showcasing the Philippines as a premier source for AI expertise.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-colors flex items-center justify-center space-x-2">
                 <Users className="h-5 w-5" />
-                <span>Join Our Team</span>
+                <span>Hire Filipino Talent</span>
               </button>
               <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-900 transition-colors flex items-center justify-center space-x-2">
                 <ArrowRight className="h-5 w-5" />
@@ -116,8 +116,8 @@ const AboutUs: React.FC = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Our Mission</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              To democratize access to verified AI talent and empower the next generation 
-              of artificial intelligence innovation through trusted connections.
+              To showcase Filipino AI expertise to the world and create meaningful opportunities 
+              for Filipino professionals while delivering exceptional value to global clients.
             </p>
           </div>
 
@@ -126,15 +126,15 @@ const AboutUs: React.FC = () => {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">The Problem We're Solving</h3>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  In the rapidly evolving AI landscape, companies struggle to identify 
-                  genuinely skilled AI professionals from those who merely claim expertise. 
-                  Traditional hiring methods fail to assess the nuanced skills required 
-                  for AI projects.
+                  Global companies need access to high-quality AI talent but struggle with 
+                  rising costs and limited availability in traditional markets. Meanwhile, 
+                  exceptional Filipino AI professionals often lack visibility and access 
+                  to international opportunities.
                 </p>
                 <p>
-                  Meanwhile, talented AI freelancers find it difficult to demonstrate 
-                  their expertise and stand out in a crowded marketplace, often losing 
-                  opportunities to less qualified but better-marketed competitors.
+                  The Philippines has a wealth of English-speaking, technically skilled 
+                  AI professionals who can deliver world-class results at competitive rates, 
+                  but connecting them with global clients has been challenging.
                 </p>
               </div>
             </div>
@@ -142,14 +142,14 @@ const AboutUs: React.FC = () => {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Solution</h3>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  AI TalentHub uses advanced AI assessment technology to rigorously test 
-                  and verify the skills of freelancers in areas like prompt engineering, 
-                  LangChain development, and AI system design.
+                  AI TalentHub serves as a bridge, connecting verified Filipino AI specialists 
+                  with global clients who value quality, communication, and cost-effectiveness. 
+                  Our rigorous verification process ensures only the best talent is featured.
                 </p>
                 <p>
-                  Our platform creates a trusted ecosystem where companies can confidently 
-                  hire top-tier AI talent, and skilled professionals can showcase their 
-                  verified expertise to secure better opportunities.
+                  We celebrate and promote the unique advantages Filipino professionals bring: 
+                  exceptional English skills, cultural adaptability, strong work ethic, 
+                  and technical excellence at competitive rates.
                 </p>
               </div>
             </div>

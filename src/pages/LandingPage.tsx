@@ -16,40 +16,40 @@ const LandingPage: React.FC = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 sm:pt-24 sm:pb-20">
           <div className="text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Find AI-verified freelancers
-              <span className="block text-blue-300">who deliver</span>
+              Connect with top Filipino
+              <span className="block text-blue-300">AI specialists</span>
             </h1>
             <p className="text-xl sm:text-2xl text-blue-100 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Connect with top-tier AI specialists who have been rigorously tested and verified. 
-              Build your next AI project with confidence.
+              Access a curated pool of highly skilled Filipino AI professionals who combine 
+              technical excellence with strong English proficiency and competitive rates.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
               <Link 
                 to="/directory"
-                className="bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-all duration-300 flex items-center space-x-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors duration-300"
               >
                 <Users className="h-5 w-5" />
-                <span>Browse Talent</span>
-                <ArrowRight className="h-5 w-5" />
+                <span>Browse Filipino Talent</span>
+                Find Filipino AI Experts
               </Link>
               <Link 
                 to="/signup"
                 className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-900 transition-all duration-300 flex items-center space-x-2"
               >
-                <Shield className="h-5 w-5" />
-                <span>Become Verified</span>
+                Join as Filipino Expert
+                <span>Join as Filipino Expert</span>
               </Link>
             </div>
 
             {/* Stats */}
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-200">500+</div>
-                <div className="text-blue-100">Verified Freelancers</div>
+                <div className="text-3xl font-bold text-blue-200">800+</div>
+                <div className="text-blue-100">Filipino AI Experts</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-200">1,200+</div>
+                <div className="text-3xl font-bold text-blue-200">2,500+</div>
                 <div className="text-blue-100">Projects Completed</div>
               </div>
               <div className="text-center">
@@ -57,8 +57,8 @@ const LandingPage: React.FC = () => {
                 <div className="text-blue-100">Success Rate</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-200">150+</div>
-                <div className="text-blue-100">Happy Clients</div>
+                <div className="text-3xl font-bold text-blue-200">45+</div>
+                <div className="text-blue-100">Countries Served</div>
               </div>
             </div>
           </div>
@@ -70,41 +70,45 @@ const LandingPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-              Why Choose AI TalentHub?
+              Why Choose Filipino AI Talent?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We use advanced AI assessment to verify skills, ensuring you work with the best talent in the industry.
+              Filipino AI professionals offer the perfect blend of technical expertise, 
+              cultural compatibility, and exceptional value for global businesses.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-6 rounded-xl hover:shadow-lg transition-shadow duration-300">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Brain className="h-8 w-8 text-blue-600" />
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Users className="h-8 w-8 text-green-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">AI-Verified Skills</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">English Proficiency</h3>
               <p className="text-gray-600">
-                Every freelancer goes through rigorous AI-powered assessments to verify their expertise in prompt engineering, LangChain, and AI development.
+                Native-level English speakers with excellent communication skills, ensuring 
+                seamless collaboration across time zones and cultural boundaries.
               </p>
             </div>
 
             <div className="text-center p-6 rounded-xl hover:shadow-lg transition-shadow duration-300">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <CheckCircle className="h-8 w-8 text-green-600" />
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Brain className="h-8 w-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Quality Guaranteed</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Technical Excellence</h3>
               <p className="text-gray-600">
-                Our verification process ensures that you're working with proven professionals who deliver high-quality results every time.
+                Rigorously tested AI specialists with deep expertise in machine learning, 
+                prompt engineering, and cutting-edge AI technologies.
               </p>
             </div>
 
             <div className="text-center p-6 rounded-xl hover:shadow-lg transition-shadow duration-300">
               <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Zap className="h-8 w-8 text-purple-600" />
+                <CheckCircle className="h-8 w-8 text-purple-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Fast Matching</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Exceptional Value</h3>
               <p className="text-gray-600">
-                Find the perfect freelancer for your project quickly with our advanced search and filtering system.
+                Access world-class AI expertise at competitive rates, delivering premium 
+                quality while optimizing your project budget.
               </p>
             </div>
           </div>
@@ -131,9 +135,10 @@ const LandingPage: React.FC = () => {
                 </div>
               </div>
               <p className="text-gray-600 mb-4">
-                "Found an amazing AI engineer who built our chatbot in record time. The verification system gave us confidence in their skills."
+                "Our Filipino AI specialist exceeded expectations. Outstanding technical skills, 
+                perfect English, and delivered our chatbot ahead of schedule."
               </p>
-              <div className="font-semibold text-gray-900">Sarah Chen, CTO at TechFlow</div>
+              <div className="font-semibold text-gray-900">James Mitchell, CTO at TechFlow</div>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
@@ -146,9 +151,10 @@ const LandingPage: React.FC = () => {
                 </div>
               </div>
               <p className="text-gray-600 mb-4">
-                "The AI verification process is genius. We knew exactly what we were getting - top-tier prompt engineering expertise."
+                "Working with Filipino AI talent through this platform has been game-changing. 
+                Great communication, timezone alignment, and exceptional AI expertise."
               </p>
-              <div className="font-semibold text-gray-900">Marcus Rodriguez, Founder of AIStart</div>
+              <div className="font-semibold text-gray-900">Sarah Chen, Founder of AIStart</div>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
@@ -161,9 +167,10 @@ const LandingPage: React.FC = () => {
                 </div>
               </div>
               <p className="text-gray-600 mb-4">
-                "Getting verified on the platform opened up amazing opportunities. Clients trust the badge system."
+                "As a Filipino AI engineer, this platform connected me with amazing global clients 
+                who value our skills and cultural work ethic."
               </p>
-              <div className="font-semibold text-gray-900">Alex Thompson, AI Freelancer</div>
+              <div className="font-semibold text-gray-900">Maria Santos, AI Specialist</div>
             </div>
           </div>
         </div>

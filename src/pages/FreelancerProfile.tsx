@@ -34,50 +34,50 @@ const FreelancerProfile: React.FC = () => {
     const mockFreelancers: Record<string, Freelancer> = {
       '1': {
         id: '1',
-        name: 'Sarah Chen',
-        region: 'Singapore, Asia',
+        name: 'Maria Santos',
+        region: 'Manila, Philippines',
         skills: ['Prompt Engineering', 'LangChain', 'OpenAI API', 'RAG Systems', 'Vector Databases'],
         rating: 4.9,
         verified: true,
         badge_level: 'Expert',
-        bio: 'AI specialist with 5+ years building conversational AI systems',
+        bio: 'Filipino AI specialist with 5+ years building conversational AI systems',
         hourly_rate: 85,
         featured: true,
         avatar_url: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400',
-        portfolio_url: 'https://sarah-ai-portfolio.com',
-        email: 'sarah.chen@email.com',
+        portfolio_url: 'https://maria-ai-portfolio.com',
+        email: 'maria.santos@email.com',
         experience_years: 5,
         completed_projects: 47,
-        description: `I'm a passionate AI engineer with over 5 years of experience in building cutting-edge conversational AI systems. My expertise spans across the entire AI development lifecycle, from initial concept and prompt engineering to deployment and optimization.
+        description: `I'm a passionate Filipino AI engineer with over 5 years of experience in building cutting-edge conversational AI systems for global clients. My expertise spans across the entire AI development lifecycle, from initial concept and prompt engineering to deployment and optimization.
 
-I specialize in creating sophisticated chatbots and AI assistants that deliver exceptional user experiences. My technical stack includes advanced prompt engineering techniques, LangChain for building complex AI workflows, and various vector databases for implementing robust RAG (Retrieval-Augmented Generation) systems.
+Based in Manila, I specialize in creating sophisticated chatbots and AI assistants that deliver exceptional user experiences. My strong English communication skills and cultural adaptability make me an ideal partner for international projects. My technical stack includes advanced prompt engineering techniques, LangChain for building complex AI workflows, and various vector databases for implementing robust RAG systems.
 
 Recent achievements include:
 • Built a customer service AI that reduced response times by 80% for a Fortune 500 company
-• Developed a legal document analysis system using RAG that processes 1000+ documents per hour
+• Developed a legal document analysis system using RAG that processes 1000+ documents per hour for a US law firm
 • Created a multi-language content generation platform serving 50,000+ daily users
 
-I'm committed to delivering high-quality solutions that not only meet technical requirements but also drive real business value. Let's discuss how I can help bring your AI vision to life.`
+I'm committed to delivering high-quality solutions that not only meet technical requirements but also drive real business value. As a Filipino professional, I bring dedication, reliability, and cultural understanding to every project. Let's discuss how I can help bring your AI vision to life.`
       },
       '2': {
         id: '2',
-        name: 'Marcus Rodriguez',
-        region: 'Austin, TX, Americas',
+        name: 'Carlos Reyes',
+        region: 'Cebu, Philippines',
         skills: ['Chatbot Development', 'Machine Learning', 'Python', 'TensorFlow', 'API Integration'],
         rating: 4.8,
         verified: true,
         badge_level: 'Professional',
-        bio: 'Full-stack AI developer specializing in enterprise chatbots',
+        bio: 'Filipino full-stack AI developer specializing in enterprise chatbots',
         hourly_rate: 75,
         featured: true,
         avatar_url: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400',
-        portfolio_url: 'https://marcus-dev.io',
-        email: 'marcus@email.com',
+        portfolio_url: 'https://carlos-dev.io',
+        email: 'carlos@email.com',
         experience_years: 4,
         completed_projects: 32,
-        description: `Full-stack AI developer with a passion for creating intelligent chatbots that transform how businesses interact with their customers. With 4 years of hands-on experience, I've helped dozens of companies implement AI solutions that drive engagement and efficiency.
+        description: `Filipino full-stack AI developer based in Cebu with a passion for creating intelligent chatbots that transform how businesses interact with their customers. With 4 years of hands-on experience, I've helped dozens of international companies implement AI solutions that drive engagement and efficiency.
 
-My approach combines technical excellence with business understanding, ensuring that every AI solution I build delivers measurable value. I specialize in enterprise-grade chatbots that can handle complex workflows, integrate with existing systems, and scale to serve thousands of users simultaneously.
+Working from the Philippines, I bring the perfect combination of technical excellence, strong English communication, and cost-effective solutions to global clients. My approach ensures that every AI solution I build delivers measurable value. I specialize in enterprise-grade chatbots that can handle complex workflows, integrate with existing systems, and scale to serve thousands of users simultaneously.
 
 Technical expertise includes:
 • Advanced machine learning algorithms and model optimization
@@ -85,7 +85,7 @@ Technical expertise includes:
 • API design and integration for seamless system connectivity
 • Performance optimization and scalability planning
 
-I pride myself on clear communication and collaborative problem-solving. Every project begins with understanding your specific needs and ends with a solution that exceeds expectations.`
+I pride myself on clear communication, cultural adaptability, and collaborative problem-solving. Every project begins with understanding your specific needs and ends with a solution that exceeds expectations.`
       }
     };
 

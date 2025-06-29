@@ -102,7 +102,7 @@ const Signup: React.FC = () => {
                   />
                   <Brain className="h-6 w-6 mx-auto mb-2 text-gray-600" />
                   <div className="font-medium text-gray-900">Offer Services</div>
-                  <div className="text-xs text-gray-500">Get verified & hired</div>
+                  <div className="text-xs text-gray-500">Filipino AI experts</div>
                 </label>
               </div>
             </div>

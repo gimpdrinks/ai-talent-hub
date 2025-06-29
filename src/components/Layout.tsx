@@ -39,7 +39,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                   isLandingPage ? 'text-white hover:text-blue-200' : 'text-gray-700 hover:text-blue-600'
                 }`}
               >
-                Browse Talent
+                Browse Filipino Talent
               </Link>
               
               {user ? (

@@ -28,15 +28,15 @@ const PricingPage: React.FC = () => {
     {
       name: 'Professional',
       price: { monthly: 99, yearly: 990 },
-      description: 'For businesses hiring AI talent regularly',
+      description: 'For businesses hiring Filipino AI talent regularly',
       features: [
         'Everything in Starter',
-        'Unlimited freelancer contact access',
+        'Unlimited Filipino specialist contact access',
         'Advanced search & filters',
         'Unlimited project posts',
         'Priority support',
         'Project management tools',
-        'Saved freelancer lists',
+        'Saved specialist lists',
         'Analytics dashboard'
       ],
       limitations: [],
@@ -69,7 +69,7 @@ const PricingPage: React.FC = () => {
     {
       name: 'Basic',
       price: { monthly: 0, yearly: 0 },
-      description: 'Start building your AI freelance career',
+      description: 'Filipino AI professionals: Start your global career',
       features: [
         'Create profile',
         'Basic verification',
@@ -89,7 +89,7 @@ const PricingPage: React.FC = () => {
     {
       name: 'Featured',
       price: { monthly: 100, yearly: 1000 },
-      description: 'Boost your visibility and get more clients',
+      description: 'Filipino experts: Boost visibility to global clients',
       features: [
         'Everything in Basic',
         'Featured profile placement',
@@ -123,7 +123,7 @@ const PricingPage: React.FC = () => {
             Simple, Transparent Pricing
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Choose the plan that works best for you. No hidden fees, no long-term contracts.
+            Access premium Filipino AI talent with transparent pricing. No hidden fees, no long-term contracts.
           </p>
 
           {/* Billing Toggle */}
@@ -158,7 +158,7 @@ const PricingPage: React.FC = () => {
         <div className="mb-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">For Clients</h2>
-            <p className="text-lg text-gray-600">Find and hire the best AI talent for your projects</p>
+            <p className="text-lg text-gray-600">Find and hire the best Filipino AI talent for your projects</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -237,7 +237,7 @@ const PricingPage: React.FC = () => {
         <div className="mb-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">For Freelancers</h2>
-            <p className="text-lg text-gray-600">Grow your AI consulting business and get more clients</p>
+            <p className="text-lg text-gray-600">Filipino AI professionals: Grow your consulting business globally</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -336,7 +336,7 @@ const PricingPage: React.FC = () => {
 
             <div className="bg-white rounded-xl p-6 shadow-sm">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">How does the verification process work?</h3>
-              <p className="text-gray-600">Our AI-powered assessment evaluates technical skills through practical questions and code challenges, ensuring all freelancers meet our quality standards.</p>
+              <p className="text-gray-600">Our AI assessment evaluates technical skills of Filipino professionals through practical questions, code challenges, and scenario-based problems specific to AI development.</p>
             </div>
           </div>
         </div>

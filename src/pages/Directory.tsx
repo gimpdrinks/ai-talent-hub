@@ -30,78 +30,78 @@ const Directory: React.FC = () => {
     const mockFreelancers: Freelancer[] = [
       {
         id: '1',
-        name: 'Sarah Chen',
-        region: 'Asia',
+        name: 'Maria Santos',
+        region: 'Manila, Philippines',
         skills: ['Prompt Engineering', 'LangChain', 'OpenAI API'],
         rating: 4.9,
         verified: true,
         badge_level: 'Expert',
-        bio: 'AI specialist with 5+ years building conversational AI systems',
+        bio: 'Filipino AI specialist with 5+ years building conversational AI systems for global clients',
         hourly_rate: 85,
         featured: true,
         avatar_url: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400'
       },
       {
         id: '2',
-        name: 'Marcus Rodriguez',
-        region: 'Americas',
+        name: 'Carlos Reyes',
+        region: 'Cebu, Philippines',
         skills: ['Chatbot Development', 'Machine Learning', 'Python'],
         rating: 4.8,
         verified: true,
         badge_level: 'Professional',
-        bio: 'Full-stack AI developer specializing in enterprise chatbots',
+        bio: 'Full-stack AI developer from Philippines specializing in enterprise chatbots',
         hourly_rate: 75,
         featured: true,
         avatar_url: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400'
       },
       {
         id: '3',
-        name: 'Elena Volkov',
-        region: 'Europe',
+        name: 'Anna Rodriguez',
+        region: 'Makati, Philippines',
         skills: ['AI Strategy', 'Prompt Engineering', 'GPT Integration'],
         rating: 4.9,
         verified: true,
         badge_level: 'Expert',
-        bio: 'AI consultant helping companies integrate LLMs into workflows',
+        bio: 'Filipino AI consultant helping global companies integrate LLMs into workflows',
         hourly_rate: 95,
         featured: false,
         avatar_url: 'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=400'
       },
       {
         id: '4',
-        name: 'David Kim',
-        region: 'Asia',
+        name: 'Miguel Cruz',
+        region: 'Davao, Philippines',
         skills: ['LangChain', 'Vector Databases', 'RAG Systems'],
         rating: 4.7,
         verified: true,
         badge_level: 'Professional',
-        bio: 'Backend engineer specializing in retrieval-augmented generation',
+        bio: 'Filipino backend engineer specializing in retrieval-augmented generation',
         hourly_rate: 70,
         featured: false,
         avatar_url: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=400'
       },
       {
         id: '5',
-        name: 'Amanda Foster',
-        region: 'Americas',
+        name: 'Sofia Dela Cruz',
+        region: 'Quezon City, Philippines',
         skills: ['AI Ethics', 'Prompt Engineering', 'Content Generation'],
         rating: 4.8,
         verified: true,
         badge_level: 'Professional',
-        bio: 'AI content strategist with expertise in responsible AI practices',
+        bio: 'Filipino AI content strategist with expertise in responsible AI practices',
         hourly_rate: 80,
         featured: false,
         avatar_url: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400'
       },
       {
         id: '6',
-        name: 'Raj Patel',
-        region: 'Asia',
+        name: 'Jose Mendoza',
+        region: 'Iloilo, Philippines',
         skills: ['NLP', 'Transformers', 'Fine-tuning'],
         rating: 4.6,
         verified: true,
         badge_level: 'Intermediate',
-        bio: 'ML engineer focused on natural language processing applications',
+        bio: 'Filipino ML engineer focused on natural language processing applications',
         hourly_rate: 65,
         featured: false,
         avatar_url: 'https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=400'
@@ -115,7 +115,7 @@ const Directory: React.FC = () => {
   }, []);
 
   const skills = ['Prompt Engineering', 'LangChain', 'Chatbot Development', 'Machine Learning', 'OpenAI API', 'AI Strategy'];
-  const regions = ['Americas', 'Europe', 'Asia', 'Africa', 'Oceania'];
+  const regions = ['Manila', 'Cebu', 'Davao', 'Makati', 'Quezon City', 'Iloilo', 'Baguio', 'Cagayan de Oro'];
   const levels = ['Intermediate', 'Professional', 'Expert'];
 
   const filteredFreelancers = freelancers.filter(freelancer => {
@@ -148,8 +148,8 @@ const Directory: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">Find AI Talent</h1>
-          <p className="text-lg text-gray-600">Browse {freelancers.length} verified AI freelancers ready for your project</p>
+          <h1 className="text-3xl font-bold text-gray-900 mb-2">Find Filipino AI Talent</h1>
+          <p className="text-lg text-gray-600">Browse {freelancers.length} verified Filipino AI specialists ready for your project</p>
         </div>
 
         {/* Search and Filters */}
@@ -160,7 +160,7 @@ const Directory: React.FC = () => {
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
               <input
                 type="text"
-                placeholder="Search by name or skills..."
+                placeholder="Search Filipino AI experts by name or skills..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
@@ -195,7 +195,7 @@ const Directory: React.FC = () => {
                 onChange={(e) => setSelectedRegion(e.target.value)}
                 className="w-full lg:w-auto px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               >
-                <option value="">All Regions</option>
+                <option value="">All Philippine Cities</option>
                 {regions.map(region => (
                   <option key={region} value={region}>{region}</option>
                 ))}
@@ -218,7 +218,7 @@ const Directory: React.FC = () => {
         {/* Results */}
         <div className="mb-6">
           <p className="text-gray-600">
-            Showing {sortedFreelancers.length} freelancer{sortedFreelancers.length !== 1 ? 's' : ''}
+            Showing {sortedFreelancers.length} Filipino AI specialist{sortedFreelancers.length !== 1 ? 's' : ''}
           </p>
         </div>
 
@@ -234,8 +234,8 @@ const Directory: React.FC = () => {
             <div className="text-gray-400 mb-4">
               <Search className="h-12 w-12 mx-auto" />
             </div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">No freelancers found</h3>
-            <p className="text-gray-600">Try adjusting your search criteria or browse all talent.</p>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">No Filipino AI specialists found</h3>
+            <p className="text-gray-600">Try adjusting your search criteria or browse all Filipino talent.</p>
           </div>
         )}
       </div>
